@@ -1,0 +1,24 @@
+{
+  "name": "nofilter-gpt",
+  "displayName": "NoFilterGPT",
+  "description": "NoFilterGPT coding assistant",
+  "version": "1.0.0",
+  "main": "./extension.js",
+  "contributes": {
+    "views": [
+      {
+        "id": "nofilter-chat",
+        "name": "NoFilterGPT Chat",
+        "type": "text",
+        "location": "sidebar",
+        "defaultHeight": 300
+      }
+    ],
+    "commands": [
+      {
+        "command": "nofilter.explain",
+        "title": "NoFilterGPT: Explain Selection"
+      }
+    ]
+  }
+}
