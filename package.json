@@ -1,9 +1,17 @@
 {
   "name": "nofilter-gpt",
   "displayName": "NoFilterGPT",
-  "description": "NoFilterGPT coding assistant",
+  "description": "A professional AI coding assistant powered by NoFilterGPT.",
   "version": "1.0.0",
   "main": "./extension.js",
+  "repository": "https://github.com/aamu67659/nofiltergpt",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onLanguage",
+    "onRender"
+  ],
   "contributes": {
     "views": [
       {
@@ -18,6 +26,14 @@
       {
         "command": "nofilter.explain",
         "title": "NoFilterGPT: Explain Selection"
+      },
+      {
+        "command": "nofilter.refactor",
+        "title": "NoFilterGPT: Refactor Selection"
+      },
+      {
+        "command": "nofil.generate",
+        "title": "NoFilterGPT: Generate New Function"
       }
     ]
   }
